@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Shadows</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--paper-2);font-family:var(--font-body);}
+  .wrap{padding:32px;height:260px;box-sizing:border-box;}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-on-paper-3);margin-bottom:18px;}
+  .row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .card{aspect-ratio:1.4;background:var(--paper);display:flex;flex-direction:column;justify-content:space-between;padding:14px;}
+  .card .lbl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--fg-on-paper-2);}
+  .card .desc{font-size:11px;color:var(--fg-on-paper-3);line-height:1.4;}
+  .poster{border:2px solid var(--ink);border-radius:0;box-shadow:6px 6px 0 0 var(--ink);}
+  .stage{background:var(--ink);color:var(--paper);border-radius:14px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55), 0 4px 12px -4px rgba(0,0,0,.4);}
+  .stage .lbl, .stage .desc{color:var(--fg-on-ink-2);}
+  .soft{border-radius:14px;box-shadow:0 6px 16px -8px rgba(14,14,18,.25), 0 1px 2px rgba(14,14,18,.06);}
+</style></head><body>
+<div class="wrap">
+  <div class="eyebrow">Shadow System</div>
+  <div class="row">
+    <div class="card poster"><span class="lbl">Poster</span><span class="desc">Flat zine-drop. Hard, offset, no blur. Use on paper.</span></div>
+    <div class="card stage"><span class="lbl">Stage</span><span class="desc">Deep, diffuse. Use for lifted cards on dark.</span></div>
+    <div class="card soft"><span class="lbl">Card</span><span class="desc">Subtle. Default for content cards on paper.</span></div>
+  </div>
+</div>
+</body></html>

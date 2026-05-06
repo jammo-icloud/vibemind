@@ -1,0 +1,17 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Vibemind Wordmark</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);}
+  .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;height:300px;}
+  .col{padding:24px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;}
+  .col.dark{background:var(--ink);color:var(--paper);}
+  .col img{max-width:80%;max-height:200px;object-fit:contain;}
+  .col.dark img{filter:invert(1);}
+  .lbl{font-size:11px;letter-spacing:.22em;text-transform:uppercase;opacity:.6;}
+</style></head><body>
+<div class="wrap">
+  <div class="col"><img src="../assets/logo-vibemind-full.png" alt="Vibemind"><div class="lbl">on Paper · default</div></div>
+  <div class="col dark"><img src="../assets/logo-vibemind-full.png" alt="Vibemind"><div class="lbl">on Ink · inverted</div></div>
+</div>
+</body></html>

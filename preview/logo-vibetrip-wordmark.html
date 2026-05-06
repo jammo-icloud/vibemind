@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Vibetrip Wordmark</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);}
+  .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;height:380px;}
+  .col{padding:24px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;}
+  .col.dark{background:var(--ink);color:var(--paper);}
+  .col img{max-width:60%;max-height:280px;object-fit:contain;}
+  .col.dark img{filter:invert(1);}
+  .lbl{font-size:11px;letter-spacing:.22em;text-transform:uppercase;opacity:.6;}
+  .note{position:absolute;top:14px;right:18px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--marquee);font-weight:800;background:var(--ink);padding:5px 9px;border-radius:999px;}
+  .wrap{position:relative;}
+</style></head><body>
+<div class="wrap">
+  <div class="note">3 Heads · Trio</div>
+  <div class="col"><img src="../assets/logo-vibetrip-full.png" alt="Vibetrip"><div class="lbl">on Paper · default</div></div>
+  <div class="col dark"><img src="../assets/logo-vibetrip-full.png" alt="Vibetrip"><div class="lbl">on Ink · inverted</div></div>
+</div>
+</body></html>

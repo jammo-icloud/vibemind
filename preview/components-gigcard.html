@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Gig Card</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--paper);font-family:var(--font-body);color:var(--ink);}
+  .wrap{padding:24px;height:300px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px;}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-on-paper-3);}
+  .gig{display:grid;grid-template-columns:96px 1fr auto;gap:18px;align-items:center;background:var(--paper-2);border:2px solid var(--ink);padding:16px 18px;box-shadow:5px 5px 0 0 var(--ink);}
+  .date{font-family:var(--font-display);text-transform:uppercase;line-height:.9;text-align:center;}
+  .date .mo{font-size:14px;letter-spacing:.1em;color:var(--brick);}
+  .date .day{font-size:46px;}
+  .info h3{font-family:var(--font-display);text-transform:uppercase;font-size:24px;line-height:1;margin:0 0 4px;letter-spacing:.01em;}
+  .info .meta{font-size:13px;color:var(--fg-on-paper-2);}
+  .info .meta b{color:var(--ink);font-weight:700;}
+  .cta{align-self:center;background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:999px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;}
+</style></head><body>
+<div class="wrap">
+  <div class="eyebrow">Gig Card · Poster Mode</div>
+  <div class="gig">
+    <div class="date"><div class="mo">May</div><div class="day">17</div></div>
+    <div class="info"><h3>Snoqualmie Block Party</h3><div class="meta">8:00&nbsp;PM · <b>Railroad Park, Snoqualmie</b> · Free</div></div>
+    <div class="cta">Details</div>
+  </div>
+  <div class="gig">
+    <div class="date"><div class="mo">Jun</div><div class="day">07</div></div>
+    <div class="info"><h3>Boxley's Place — Vibetrip</h3><div class="meta">9:30&nbsp;PM · <b>North Bend</b> · 21+</div></div>
+    <div class="cta">Details</div>
+  </div>
+</div>
+</body></html>

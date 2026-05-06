@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Buttons</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--paper);font-family:var(--font-body);color:var(--ink);}
+  .wrap{padding:24px;height:300px;box-sizing:border-box;display:flex;flex-direction:column;gap:18px;}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-on-paper-3);}
+  .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+  .lbl{font-family:ui-monospace,monospace;font-size:10px;color:var(--fg-on-paper-3);width:80px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-body);font-weight:700;font-size:14px;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border-radius:999px;border:0;cursor:pointer;transition:all .22s cubic-bezier(.22,1,.36,1);}
+  .btn-primary{background:var(--ink);color:var(--paper);}
+  .btn-primary:hover{background:var(--marquee);color:var(--ink);}
+  .btn-marquee{background:var(--marquee);color:var(--ink);}
+  .btn-marquee:hover{background:var(--marquee-deep);}
+  .btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink);}
+  .btn-ghost:hover{background:var(--ink);color:var(--paper);}
+  .btn-rainbow{position:relative;background:var(--ink);color:var(--paper);overflow:hidden;}
+  .btn-rainbow::before{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--rainbow);}
+</style></head><body>
+<div class="wrap">
+  <div class="eyebrow">Buttons</div>
+  <div class="row"><div class="lbl">primary</div><button class="btn btn-primary">Join the List</button><button class="btn btn-primary">Tip the Band</button></div>
+  <div class="row"><div class="lbl">marquee</div><button class="btn btn-marquee">See the Gigs</button><button class="btn btn-marquee">Book Vibemind</button></div>
+  <div class="row"><div class="lbl">ghost</div><button class="btn btn-ghost">Watch Live</button><button class="btn btn-ghost">Listen</button></div>
+  <div class="row"><div class="lbl">rainbow</div><button class="btn btn-rainbow">Vibemind Live!</button></div>
+</div>
+</body></html>

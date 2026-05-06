@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Ink &amp; Paper</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;font-family:var(--font-body);}
+  .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:0;height:260px;}
+  .col{padding:24px;display:flex;flex-direction:column;justify-content:space-between;}
+  .col.dark{background:var(--ink);color:var(--paper);}
+  .col.light{background:var(--paper);color:var(--ink);}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;opacity:.6;margin-bottom:14px;}
+  .stack{display:grid;gap:8px;}
+  .row{display:grid;grid-template-columns:36px 1fr auto;gap:10px;align-items:center;font-size:12px;}
+  .chip{width:36px;height:36px;border-radius:8px;border:1px solid rgba(127,127,127,.25);}
+  .name{font-weight:700;letter-spacing:.04em;}
+  .hex{font-family:ui-monospace,monospace;opacity:.7;}
+</style></head><body>
+<div class="wrap">
+  <div class="col dark">
+    <div class="eyebrow">Ink — the Stage</div>
+    <div class="stack">
+      <div class="row"><div class="chip" style="background:#0E0E12"></div><div class="name">--ink</div><div class="hex">#0E0E12</div></div>
+      <div class="row"><div class="chip" style="background:#1A1A22"></div><div class="name">--ink-2</div><div class="hex">#1A1A22</div></div>
+      <div class="row"><div class="chip" style="background:#2A2A33"></div><div class="name">--ink-3</div><div class="hex">#2A2A33</div></div>
+    </div>
+  </div>
+  <div class="col light">
+    <div class="eyebrow">Paper — Gig Poster</div>
+    <div class="stack">
+      <div class="row"><div class="chip" style="background:#FAF6EE"></div><div class="name">--paper</div><div class="hex">#FAF6EE</div></div>
+      <div class="row"><div class="chip" style="background:#F0E9DA"></div><div class="name">--paper-2</div><div class="hex">#F0E9DA</div></div>
+      <div class="row"><div class="chip" style="background:#E4D9C2"></div><div class="name">--paper-3</div><div class="hex">#E4D9C2</div></div>
+    </div>
+  </div>
+</div>
+</body></html>

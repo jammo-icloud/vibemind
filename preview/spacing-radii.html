@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Spacing &amp; Radii</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--paper);font-family:var(--font-body);}
+  .wrap{padding:24px;height:260px;box-sizing:border-box;display:grid;grid-template-rows:auto 1fr;gap:18px;}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-on-paper-3);}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .group h4{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px;color:var(--fg-on-paper-2);}
+  .scale{display:flex;align-items:flex-end;gap:6px;}
+  .scale .step{display:flex;flex-direction:column;align-items:center;gap:6px;}
+  .scale .bar{background:var(--ink);border-radius:2px;}
+  .scale .lbl{font-family:ui-monospace,monospace;font-size:9px;color:var(--fg-on-paper-3);}
+  .radii{display:flex;gap:8px;align-items:flex-end;}
+  .radii .box{width:46px;height:46px;background:var(--ink);display:flex;align-items:flex-end;justify-content:center;color:var(--paper);font-family:ui-monospace,monospace;font-size:9px;padding-bottom:4px;}
+</style></head><body>
+<div class="wrap">
+  <div class="eyebrow">Spacing &amp; Radii</div>
+  <div class="grid">
+    <div class="group">
+      <h4>Spacing scale (px)</h4>
+      <div class="scale">
+        <div class="step"><div class="bar" style="width:14px;height:4px"></div><div class="lbl">4</div></div>
+        <div class="step"><div class="bar" style="width:14px;height:8px"></div><div class="lbl">8</div></div>
+        <div class="step"><div class="bar" style="width:14px;height:12px"></div><div class="lbl">12</div></div>
+        <div class="step"><div class="bar" style="width:14px;height:16px"></div><div class="lbl">16</div></div>
+        <div class="step"><div class="bar" style="width:14px;height:24px"></div><div class="lbl">24</div></div>
+        <div class="step"><div class="bar" style="width:14px;height:32px"></div><div class="lbl">32</div></div>
+        <div class="step"><div class="bar" style="width:14px;height:48px"></div><div class="lbl">48</div></div>
+        <div class="step"><div class="bar" style="width:14px;height:64px"></div><div class="lbl">64</div></div>
+        <div class="step"><div class="bar" style="width:14px;height:96px"></div><div class="lbl">96</div></div>
+      </div>
+    </div>
+    <div class="group">
+      <h4>Corner radii</h4>
+      <div class="radii">
+        <div class="box" style="border-radius:0">0</div>
+        <div class="box" style="border-radius:6px">sm</div>
+        <div class="box" style="border-radius:10px">md</div>
+        <div class="box" style="border-radius:18px">lg</div>
+        <div class="box" style="border-radius:28px">xl</div>
+        <div class="box" style="border-radius:999px">pill</div>
+      </div>
+      <p style="font-size:11px;color:var(--fg-on-paper-3);margin:14px 0 0;line-height:1.4;">
+        Posters use <code>0</code>. Cards use <code>md / lg</code>. CTAs go full <code>pill</code>.
+      </p>
+    </div>
+  </div>
+</div>
+</body></html>

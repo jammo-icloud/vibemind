@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Rainbow Dot Motif</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;font-family:var(--font-body);background:var(--ink);color:var(--paper);}
+  .wrap{padding:24px;height:280px;box-sizing:border-box;display:grid;grid-template-rows:auto 1fr;gap:18px;}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-on-ink-3);}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:center;}
+  .demo{background:var(--ink-2);border:1px solid var(--hairline-on-ink);border-radius:14px;padding:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;height:170px;box-sizing:border-box;}
+  .demo .lbl{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--fg-on-ink-3);}
+  .v{display:flex;flex-direction:column;align-items:center;gap:4px;}
+  .v .row{display:flex;gap:6px;}
+  .v .dot{width:8px;height:8px;border-radius:50%;}
+  .bullets{display:flex;flex-direction:column;gap:8px;align-items:flex-start;font-size:13px;}
+  .bullets .li{display:flex;align-items:center;gap:10px;}
+  .bullets .d{width:10px;height:10px;border-radius:50%;}
+  .loader{display:flex;gap:6px;}
+  .loader .d{width:12px;height:12px;border-radius:50%;animation:bounce 1.2s infinite ease-in-out;}
+  @keyframes bounce{0%,80%,100%{transform:translateY(0);opacity:.5;}40%{transform:translateY(-8px);opacity:1;}}
+</style></head><body>
+<div class="wrap">
+  <div class="eyebrow">Rainbow-Dot Motif · Lifted from Vibey's Forehead</div>
+  <div class="grid">
+    <div class="demo">
+      <div class="v">
+        <div class="row"><div class="dot" style="background:#E63B95"></div><div class="dot" style="background:#E2382E"></div><div class="dot" style="background:#F2811D"></div><div class="dot" style="background:#F5C518"></div><div class="dot" style="background:#36B249"></div><div class="dot" style="background:#2D6FE0"></div><div class="dot" style="background:#7A3AB8"></div></div>
+        <div class="row"><div class="dot" style="background:#E2382E"></div><div class="dot" style="background:#F2811D"></div><div class="dot" style="background:#F5C518"></div><div class="dot" style="background:#36B249"></div><div class="dot" style="background:#2D6FE0"></div></div>
+        <div class="row"><div class="dot" style="background:#F2811D"></div><div class="dot" style="background:#F5C518"></div><div class="dot" style="background:#36B249"></div></div>
+        <div class="row"><div class="dot" style="background:#F5C518"></div></div>
+      </div>
+      <div class="lbl">Chakra V</div>
+    </div>
+    <div class="demo">
+      <div class="bullets">
+        <div class="li"><div class="d" style="background:#E63B95"></div>Heather — vocals</div>
+        <div class="li"><div class="d" style="background:#F2811D"></div>Nic — bass</div>
+        <div class="li"><div class="d" style="background:#F5C518"></div>Jim — guitar</div>
+        <div class="li"><div class="d" style="background:#36B249"></div>Boomer — guitar</div>
+        <div class="li"><div class="d" style="background:#2D6FE0"></div>Dane — drums</div>
+        <div class="li"><div class="d" style="background:#7A3AB8"></div>Sally — keys</div>
+      </div>
+      <div class="lbl">Member Bullets</div>
+    </div>
+    <div class="demo">
+      <div class="loader"><div class="d" style="background:#E63B95"></div><div class="d" style="background:#F2811D;animation-delay:.15s"></div><div class="d" style="background:#F5C518;animation-delay:.3s"></div><div class="d" style="background:#36B249;animation-delay:.45s"></div><div class="d" style="background:#2D6FE0;animation-delay:.6s"></div><div class="d" style="background:#7A3AB8;animation-delay:.75s"></div></div>
+      <div class="lbl">Loader</div>
+    </div>
+  </div>
+</div>
+</body></html>

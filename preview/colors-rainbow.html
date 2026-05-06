@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Rainbow Palette</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--ink);color:var(--fg-on-ink-1);font-family:var(--font-body);}
+  .wrap{padding:24px;}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg-on-ink-3);margin-bottom:14px;}
+  .row{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;}
+  .sw{aspect-ratio:1;border-radius:14px;display:flex;flex-direction:column;justify-content:flex-end;padding:8px;color:#0E0E12;font-weight:700;font-size:10px;}
+  .sw.dark{color:#FAF6EE;}
+  .sw .name{font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.85;}
+  .sw .hex{font-family:ui-monospace,monospace;font-size:11px;}
+  .grad{margin-top:12px;height:24px;border-radius:999px;background:var(--rainbow);}
+  .gradlbl{margin-top:6px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-on-ink-2);}
+</style></head><body>
+<div class="wrap">
+  <div class="eyebrow">Rainbow — Vibey's Chakra</div>
+  <div class="row">
+    <div class="sw dark" style="background:#E63B95"><span class="name">Pink</span><span class="hex">#E63B95</span></div>
+    <div class="sw dark" style="background:#E2382E"><span class="name">Red</span><span class="hex">#E2382E</span></div>
+    <div class="sw" style="background:#F2811D"><span class="name">Orange</span><span class="hex">#F2811D</span></div>
+    <div class="sw" style="background:#F5C518"><span class="name">Yellow</span><span class="hex">#F5C518</span></div>
+    <div class="sw" style="background:#36B249"><span class="name">Green</span><span class="hex">#36B249</span></div>
+    <div class="sw" style="background:#1AB6CF"><span class="name">Cyan</span><span class="hex">#1AB6CF</span></div>
+    <div class="sw dark" style="background:#2D6FE0"><span class="name">Blue</span><span class="hex">#2D6FE0</span></div>
+    <div class="sw dark" style="background:#7A3AB8"><span class="name">Purple</span><span class="hex">#7A3AB8</span></div>
+  </div>
+  <div class="grad"></div>
+  <div class="gradlbl">--rainbow gradient</div>
+</div>
+</body></html>
