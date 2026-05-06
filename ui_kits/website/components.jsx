@@ -6,7 +6,7 @@ const { useState } = React;
 // ---------- Logo ----------
 function VibeyMark({ size = 36 }) {
   return (
-    <img src="../../assets/alien-bud.jpg" alt="Vibey"
+    <img src="assets/alien-bud.jpg" alt="Vibey"
          style={{ width: size, height: size, objectFit: 'contain', borderRadius: 6 }} />
   );
 }
@@ -14,8 +14,8 @@ function VibeyMark({ size = 36 }) {
 // Real wordmark — always image, never typeset. Pass variant="trip" for Vibetrip.
 function Wordmark({ height = 44, variant = 'mind' }) {
   const src = variant === 'trip'
-    ? '../../assets/logo-vibetrip-full.png'
-    : '../../assets/logo-vibemind-full.png';
+    ? 'assets/logo-vibetrip-full.png'
+    : 'assets/logo-vibemind-full.png';
   // The vibemind lockup is wider (alien wreath + word), vibetrip is more vertical.
   return (
     <img src={src} alt={variant === 'trip' ? 'Vibetrip' : 'Vibemind'}
@@ -116,7 +116,7 @@ function Hero() {
     <section style={{
       position: 'relative',
       minHeight: 540,
-      backgroundImage: 'linear-gradient(180deg, rgba(14,14,18,0.4) 0%, rgba(14,14,18,0.85) 100%), url(../../assets/band3.jpg)',
+      backgroundImage: 'linear-gradient(180deg, rgba(14,14,18,0.4) 0%, rgba(14,14,18,0.85) 100%), url(assets/band3.jpg)',
       backgroundSize: 'cover', backgroundPosition: 'center',
       display: 'flex', alignItems: 'flex-end',
       padding: '120px 32px 48px',
@@ -187,12 +187,12 @@ function MusicSection() {
 
 // ---------- Band ----------
 const MEMBERS = [
-  { id: 'heather', name: 'Heather Morris', nick: 'Heathercita', role: 'Lead vocals · acoustic guitar', color: '#E63B95', img: '../../assets/heather.jpg' },
-  { id: 'nic', name: 'Nic Fillingham', nick: 'Nic-o-time', role: 'Bass · vocals', color: '#F2811D', img: '../../assets/nic.jpg' },
-  { id: 'jim', name: 'Jim Martin', nick: 'Rigs', role: 'Guitar', color: '#F5C518', img: '../../assets/jim.jpg' },
-  { id: 'boomer', name: 'Boomer Hess', nick: 'Boomer', role: 'Guitar · harmonica · vocals', color: '#36B249', img: '../../assets/boomer.jpg' },
-  { id: 'dane', name: 'Dane Estepa', nick: 'Ese', role: 'Drums', color: '#2D6FE0', img: '../../assets/dane.jpg' },
-  { id: 'sally', name: 'Sally Mitchell', nick: 'Sally', role: 'Keys · percussion · vocals', color: '#7A3AB8', img: '../../assets/sally.jpg' },
+  { id: 'heather', name: 'Heather Morris', nick: 'Heathercita', role: 'Lead vocals · acoustic guitar', color: '#E63B95', img: 'assets/heather.jpg' },
+  { id: 'nic', name: 'Nic Fillingham', nick: 'Nic-o-time', role: 'Bass · vocals', color: '#F2811D', img: 'assets/nic.jpg' },
+  { id: 'jim', name: 'Jim Martin', nick: 'Rigs', role: 'Guitar', color: '#F5C518', img: 'assets/jim.jpg' },
+  { id: 'boomer', name: 'Boomer Hess', nick: 'Boomer', role: 'Guitar · harmonica · vocals', color: '#36B249', img: 'assets/boomer.jpg' },
+  { id: 'dane', name: 'Dane Estepa', nick: 'Ese', role: 'Drums', color: '#2D6FE0', img: 'assets/dane.jpg' },
+  { id: 'sally', name: 'Sally Mitchell', nick: 'Sally', role: 'Keys · percussion · vocals', color: '#7A3AB8', img: 'assets/sally.jpg' },
 ];
 
 function MemberCard({ m }) {
@@ -241,19 +241,19 @@ function BandSection() {
 // ---------- Gigs ----------
 // Real Heather-made posters live in /assets. Posterless rows fall back to a date-block.
 const GIGS = [
-  { mo: 'Apr', day: '22', name: 'Earth Day Vibetrip', meta: '2:00 PM · Oxbow Farm & Conservation Center, Carnation · Free · All ages', tag: 'trip', poster: '../../assets/poster-earthday-vibetrip.png' },
+  { mo: 'Apr', day: '22', name: 'Earth Day Vibetrip', meta: '2:00 PM · Oxbow Farm & Conservation Center, Carnation · Free · All ages', tag: 'trip', poster: 'assets/poster-earthday-vibetrip.png' },
   { mo: 'May', day: '17', name: 'Snoqualmie Block Party', meta: '8:00 PM · Railroad Park, Snoqualmie · Free', tag: 'mind' },
-  { mo: 'May', day: '30', name: 'Sip, Rock, Roll. — Prohibition Cellars', meta: '7–9 PM · 19501 144th Ave NE, Woodinville', tag: 'mind', poster: '../../assets/poster-prohibition.png' },
+  { mo: 'May', day: '30', name: 'Sip, Rock, Roll. — Prohibition Cellars', meta: '7–9 PM · 19501 144th Ave NE, Woodinville', tag: 'mind', poster: 'assets/poster-prohibition.png' },
   { mo: 'Jun', day: '07', name: 'Carnation Farmers Market', meta: '5:30 PM · Carnation, WA · All ages', tag: 'mind' },
   { mo: 'Jun', day: '21', name: 'Summer Solstice on the Snoqualmie', meta: '7:00 PM · Riverfront Park · Free', tag: 'mind' },
   { mo: 'Jul', day: '04', name: 'Fall City 4th of July', meta: '6:00 PM · Fall City · Free', tag: 'mind' },
   { mo: 'Jul', day: '19', name: 'Private Wedding', meta: '— · Snoqualmie Falls', tag: 'trip' },
-  { mo: 'Aug', day: '01', name: 'Live Music at Remlinger Brewing', meta: '6–8 PM · 32610 NE 32nd St, Carnation · Free · All ages', tag: 'mind', poster: '../../assets/poster-remlinger-aug.png' },
+  { mo: 'Aug', day: '01', name: 'Live Music at Remlinger Brewing', meta: '6–8 PM · 32610 NE 32nd St, Carnation · Free · All ages', tag: 'mind', poster: 'assets/poster-remlinger-aug.png' },
 ];
 
 // Tiny logo lockup used in place of a text "tag" pill. Holographic laser sheen.
 function GigTagLogo({ tag }) {
-  const src = tag === 'trip' ? '../../assets/logo-vibetrip-full.png' : '../../assets/logo-vibemind-full.png';
+  const src = tag === 'trip' ? 'assets/logo-vibetrip-full.png' : 'assets/logo-vibemind-full.png';
   const label = tag === 'trip' ? 'Vibetrip' : 'Vibemind';
   const h = tag === 'trip' ? 44 : 36;
   return (
